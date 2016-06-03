@@ -2,10 +2,10 @@ language: python
 
 env:
   global:
-    - ANACONDA_USER=lightsource2
+    - ANACONDA_USER=lightsource2-dev
     # if ANACONDA_CHANNEL is not defined then the conda package will be
     # uploaded to the main channel.
-    - ANACONDA_CHANNEL="development"
+    - ANACONDA_CHANNEL="main"
     # Set this flag to your branch name if you push something to the upstream
     # repo and you want it to build automatically and be pushed to lightsource2.
     # I would also suggest changing the ANACONDA_CHANNEL name

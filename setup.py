@@ -1,8 +1,10 @@
 from setuptools import setup
+import versioneer
+
 
 setup(
     name='doct',
-    version='1.0.0',
+    version=versioneer.get_version(),
     author='Brookhaven National Laboratory',
     license='BSD 3-Clause',
     py_modules=['doct'],

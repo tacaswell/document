@@ -5,6 +5,7 @@ import versioneer
 setup(
     name='doct',
     version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     author='Brookhaven National Laboratory',
     license='BSD 3-Clause',
     py_modules=['doct'],

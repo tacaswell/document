@@ -1,11 +1,14 @@
 from setuptools import setup
+import versioneer
+
 
 setup(
     name='doct',
-    version='1.0.0',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     author='Brookhaven National Laboratory',
     license='BSD 3-Clause',
-    py_modules=['doct'],
+    packages=['doct'],
     description='A read-only dottable dictionary',
     url='http://github.com/NSLS-II/doct',
     install_requires=['six', 'humanize', 'prettytable']

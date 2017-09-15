@@ -37,6 +37,9 @@ import datetime
 import humanize
 from prettytable import PrettyTable
 
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
 
 _HTML_TEMPLATE = """
 <table>
